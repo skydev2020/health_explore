@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-blue-outline {
+  border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+  color: rgba(59, 130, 246, var(--tw-text-opacity));
+}
+
+.btn-blue-outline:hover {
+  background: rgba(59, 130, 246, var(--tw-border-opacity));
+  color: #FFF;
+}
+
+.btn-blue {
+  background: rgba(59, 130, 246, var(--tw-border-opacity));
+  color: #FFF;
+}
+
+.btn-blue:hover {
+  background: rgba(38, 80, 150, var(--tw-border-opacity));
+}
+
+.bg-black-opacity {
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 50;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-inwrap {
+  width: 100%;
+  position: relative;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.joblisting {
+  padding: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.joblisting .job-item {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  --tw-space-y-reverse: 0;
+  /* margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse))); */
+  margin-bottom: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+}
+
+.job-details {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  padding: 0.5rem 1rem;
+  font-size: .75rem;
+  line-height: 1rem;
+  border-width: 1px;
+  border-radius: .5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+
+.job-lists {
+  padding: .75rem;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-width: 1px;
+}
+
+.sortby-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1.25rem;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bg-black-opacity{
+  background:rgba(0,0,0,.3);
+  display:none;
+}
+
+.bg-black-opacity.flex{
+    background:rgba(0,0,0,.3);
+    display:flex;
+}
+
+button:focus{
+  outline: none;
+}
+
+.sort-icon{
+  height: 10px;
+}
+
+.cursor-pointer img{
+  display: inline;
+}
+
+.modal-wrap{
+  margin-left: 0px !important;
+}
